@@ -40,12 +40,12 @@ export const RevealScreen = () => {
             exit={{ scale: 0.9, opacity: 0 }}
             className="text-center space-y-8"
           >
-            <h2 className="text-3xl font-bold text-gray-800">Ready to reveal?</h2>
+            <h2 className="text-3xl font-bold text-gray-800">Sudah Siap?</h2>
             <Button
               onClick={handleReveal}
               className="bg-white text-gray-800 hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl px-8 py-6 rounded-full text-lg"
             >
-              Reveal Now
+              Click Now
             </Button>
           </motion.div>
         ) : (
