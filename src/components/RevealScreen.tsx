@@ -6,14 +6,15 @@ import confetti from "canvas-confetti";
 
 export const RevealScreen = () => {
   const [revealed, setRevealed] = useState(false);
-  const [gender] = useState<"boy" | "girl">("boy"); // In real app, this would come from props/API
+  const [gender] = useState<"boy" | "girl">("girl"); // Changed to girl
 
   const handleReveal = () => {
     setRevealed(true);
     confetti({
       particleCount: 100,
       spread: 70,
-      origin: { y: 0.6 }
+      origin: { y: 0.6 },
+      colors: ['#FFB6C1', '#FFC0CB', '#FF69B4'] // Pink confetti colors
     });
   };
 
@@ -59,8 +60,8 @@ export const RevealScreen = () => {
               transition={{ delay: 0.3 }}
               className="space-y-4"
             >
-              <h2 className="text-4xl font-bold text-accent-blue">It's a</h2>
-              <p className={`text-6xl font-bold ${gender === "boy" ? "text-accent-blue" : "text-accent-pink"}`}>
+              <h2 className="text-4xl font-bold text-accent-pink">It's a</h2>
+              <p className="text-6xl font-bold text-accent-pink">
                 {gender.toUpperCase()}!
               </p>
             </motion.div>
