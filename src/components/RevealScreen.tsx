@@ -71,7 +71,7 @@ export const RevealScreen = () => {
               className="bg-white text-gray-800 hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl px-6 py-4 rounded-full"
             >
               <Share2 className="mr-2 h-5 w-5" />
-              Share the News
+              Umumkan ke Dunia
             </Button>
           </motion.div>
         )}
