@@ -18,8 +18,8 @@ export const WelcomeScreen = () => {
         className="text-center space-y-6"
       >
         <div className="space-y-2">
-          <h1 className="text-4xl font-bold text-gray-800">GENDER REVEAL</h1>
-          <p className="text-lg text-gray-600">Share the joy of your special moment</p>
+          <h1 className="text-4xl font-bold text-gray-800">Ungkap Jenis-Kelamin</h1>
+          <p className="text-lg text-gray-600">Umumkan ke Dunia</p>
         </div>
         
         <Button 
